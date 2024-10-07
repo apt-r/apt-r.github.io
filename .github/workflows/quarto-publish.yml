@@ -1,6 +1,6 @@
 on:
   workflow_dispatch:
-  pull:
+  pull_request:
     branches:
       - main
   push:
