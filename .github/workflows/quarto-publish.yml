@@ -1,4 +1,8 @@
 on:
+  workflow_dispatch:
+  pull:
+    branches:
+      - main
   push:
     branches:
       - main
