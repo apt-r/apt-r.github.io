@@ -2,5 +2,6 @@
 
 /.quarto/
 .Rproj.user
+.Rhistory
 
 _site/
