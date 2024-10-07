@@ -5,8 +5,6 @@ on:
 
 name: Render and Publish
 
-
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -39,7 +37,7 @@ jobs:
             any::knitr
             any::rmarkdown
 
-      - name: Publish to GitHub Pages (and render) 
+      - name: Render and publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
