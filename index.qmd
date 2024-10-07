@@ -1,5 +1,5 @@
 ---
-title: "apt-r.github.io"
+title: "APT-R"
 ---
 
 This is a Quarto website.
