@@ -2,8 +2,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "APT-R",
+    "title": "Welcome to the website for the APT-R project",
     "section": "",
-    "text": "This is a Quarto website.\nTest 2.\nNy test\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "APT-R is a research project funded by the Research Council of Norway. The project’s main focus is:\n\nBayesian modelling of automatic passenger counts (APC) and automatic vehicle location data (AVL).\nDeveloping an R-package with functions facilitating working with APC-AVL data.\n\nThis website is under construction.\nThe site is built using Quarto and hosted by GitHub Pages."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the project",
+    "section": "",
+    "text": "About the project\nThe research project Analysis of Public Transport Data: Building an Open-Source Library in R – APT-R – is funded by the Research Council of Norway (332237). APT-R is a collaboration between research institutes from the areas applied transport (Institute of Transport Economics, TØI) and statistical modelling, machine learning, and ICT (Norwegian Computing Center, NR), university scholars from the Norwegian University of Science and Technology (NTNU), and stakeholders from the public transport sector (Entur, Kolumbus, and AtB).\nAPT-R is led by TØI and includes a PhD in Mathematical Sciences at NTNU. The project period is 2022 - 2026."
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Public transport data",
+    "section": "",
+    "text": "Public transport data\n\nAutomatic passenger counts (APC)\n\n\nAutomatic vehicle location data (AVL)"
   }
 ]
