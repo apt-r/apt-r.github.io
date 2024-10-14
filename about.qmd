@@ -20,7 +20,7 @@ APT-R is led by TØI and includes a PhD in Mathematical Sciences at NTNU. The pr
 
 ![](images/icons/entur.svg){height="0.6in"}
 
-![](images/icons/atb.png){height="0.3in"} 
+![](images/icons/atb.png){height="0.2in"} 
 
 ![](images/icons/kolumbus.png){height="0.45in"}
 
