@@ -1,0 +1,28 @@
+# About the project
+
+The research project *Analysis of Public Transport Data: Building an Open-Source Library in R -- APT-R --* is funded by the Research Council of Norway ([332237](https://prosjektbanken.forskningsradet.no/en/project/FORISS/332237?Kilde=FORISS)). APT-R is a collaboration between research institutes from the areas applied transport (Institute of Transport Economics, TØI) and statistical modelling, machine learning, and ICT (Norwegian Computing Center, NR), university scholars from the Norwegian University of Science and Technology (NTNU), and stakeholders from the public transport sector (Entur, Kolumbus, and AtB).
+
+APT-R is led by TØI and includes a PhD in Mathematical Sciences at NTNU. The project period is 2022 - 2026.
+
+::: {layout-ncol="3"}
+
+![](images/icons/toi.png){height="0.35in"}
+
+![](images/icons/ntnu.svg){height="0.35in"}
+
+![](images/icons/nr.png){height="0.32in"}
+
+:::
+
+::: {layout-ncol="4"}
+
+![](images/icons/nfr.svg){height="0.7in"}
+
+![](images/icons/entur.svg){height="0.6in"}
+
+![](images/icons/atb.png){height="0.4in"} 
+
+![](images/icons/kolumbus.png){height="0.45in"}
+
+
+:::

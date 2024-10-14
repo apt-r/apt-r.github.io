@@ -1,15 +1,15 @@
 ---
-title: "APT-R"
+title: "Welcome to the website for the APT-R project"
 ---
 
-This is a Quarto website.
+![](images/icons/aptr.svg){fig-alt="Project logo: The letters A P T R above a green and blue line illustrating public transport stops along bus/metro lines." fig-align="center" width="70%"}
 
-Test 2.
+APT-R is a research project funded by the Research Council of Norway. 
+The project's main focus is: 
 
-Ny test
+1. Bayesian modelling of automatic passenger counts (APC) and automatic vehicle location data (AVL).
+2. Developing an R-package with functions facilitating working with APC-AVL data.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+*This website is under construction.*
 
-```{r}
-1 + 1
-```
+The site is built using [Quarto](https://quarto.org/) and hosted by [GitHub Pages](https://pages.github.com/).
