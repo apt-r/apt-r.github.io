@@ -6,22 +6,40 @@ APT-R is led by TØI and includes a PhD in Mathematical Sciences at NTNU. The pr
 
 ::: {layout-ncol="3"}
 
-<img src="images/icons/toi.png" height="30" alt="TØI logo">
+<a href="https://www.toi.no">
+  <img src="images/icons/toi.png" height="30" alt="TØI logo">
+</a>
 
-<img src="images/icons/ntnu.svg" height="30" alt="NTNU logo">
+<a href="https://www.ntnu.no/imf">
+  <img src="images/icons/ntnu.svg" height="30" alt="NTNU logo">
+</a>
 
-<img src="images/icons/nr.png" height="30" alt="NR logo">
+<a href="https://nr.no">
+  <img src="images/icons/nr.png" height="30" alt="NR logo">
+</a>
 
 :::
 
 ::: {layout-ncol="4"}
 
+<a href="https://www.forskningsradet.no">
 <img src="images/icons/nfr.svg" height="55" alt="NFR logo">
+</a>
 
+
+<a href="https://entur.no">
 <img src="images/icons/entur.svg" height="55" alt="ENTUR logo">
+</a>
 
+
+<a href="https://www.atb.no">
 <img src="images/icons/atb.png" height="45" alt="AtB logo">
+</a>
 
+
+<a href="https://www.kolumbus.no">
 <img src="images/icons/kolumbus.png" height="40" alt="Kolumbus logo">
+</a>
+
 
 :::
