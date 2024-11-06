@@ -8,7 +8,7 @@ APT-R is a research project funded by the Research Council of Norway.
 The project's main focus is: 
 
 1. Bayesian modelling of automatic passenger counts (APC) and automatic vehicle location data (AVL).
-2. Developing an R-package with functions facilitating working with APC-AVL data.
+2. Developing an R-package with functions facilitating working with APC and AVL data.
 
 *This website is under construction.*
 
