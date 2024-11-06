@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,8 +147,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#public-transport-data" id="toc-public-transport-data" class="nav-link active" data-scroll-target="#public-transport-data">Public transport data</a>
   <ul class="collapse">
-  <li><a href="#automatic-passenger-counts-apc" id="toc-automatic-passenger-counts-apc" class="nav-link" data-scroll-target="#automatic-passenger-counts-apc">Automatic passenger counts (APC)</a></li>
-  <li><a href="#automatic-vehicle-location-data-avl" id="toc-automatic-vehicle-location-data-avl" class="nav-link" data-scroll-target="#automatic-vehicle-location-data-avl">Automatic vehicle location data (AVL)</a></li>
+  <li><a href="#apc-and-avl-data" id="toc-apc-and-avl-data" class="nav-link" data-scroll-target="#apc-and-avl-data">APC and AVL data</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -132,17 +160,33 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="public-transport-data" class="level1">
 <h1>Public transport data</h1>
-<section id="automatic-passenger-counts-apc" class="level3">
-<h3 class="anchored" data-anchor-id="automatic-passenger-counts-apc">Automatic passenger counts (APC)</h3>
-</section>
-<section id="automatic-vehicle-location-data-avl" class="level3">
-<h3 class="anchored" data-anchor-id="automatic-vehicle-location-data-avl">Automatic vehicle location data (AVL)</h3>
+<p>Public transport data can broadly be divided into 1) data related to the public transport network itself: available modes, location of stops/stations, routes, and schedules, and 2) data about actual travel patterns and system performance, such as the number of passengers on board (occupancy) or delays.</p>
+<p>The first type of data is planned information and typically follows available standards such as the General Transit Feed Specification (<a href="https://gtfs.org/" class="external" target="_blank">GTFS</a>) or Network Timetable Exchange (<a href="https://transmodel-cen.eu/index.php/netex/" class="external" target="_blank">NeTEx</a>). The second type of data are in Koutsopoulos et al.&nbsp;(2019)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> referred to as <em>automated data sources</em> and include the main categories: automated passenger counting systems (APC), automated vehicle location systems (AVL), and automated fare-collection (AFC).</p>
+<p>In the APT-R project, we focus on APC and AVL data and below is a brief description of these data sources.</p>
+<section id="apc-and-avl-data" class="level3">
+<h3 class="anchored" data-anchor-id="apc-and-avl-data">APC and AVL data</h3>
+<p>As the name suggests, automated passenger counting systems counts the number of passengers boarding and alighting a public transport vehicle. Such telematics systems consist of in-vehicle sensors using e.g.&nbsp;infrared beams, cameras or other sensor technology to register the number of people entering or exiting a vehicle’s doors. As well as units to store, process, and transmit the count data to land side back-end solutions.</p>
+<p>The illustration in Fig. 1 shows two passengers boarding a bus at stop <span class="math inline">\(s_i\)</span>.</p>
+<p><br></p>
+<p><img src="images/illustration-apc-avl.png" class="img-fluid" alt="Fig. 1 Schematic illustration of APC and AVL data."> In addition to the passenger counts, information about the stop, route, and actual arrival and departure time is found in APC datasets. The latter is a type of automated vehicle location data at stop level. However, AVL is also available at higher resolutions. It is real-time GPS data about vehicle locations which are used for both real-time passenger information and analyses of public transport routes and system performance.</p>
+<section id="useful-to-know" class="level4">
+<h4 class="anchored" data-anchor-id="useful-to-know">Useful to know</h4>
+<ul>
+<li>Passenger counts in a dataset could be raw counts from the system or values that have been post-processed in some way before they are shared. E.g. imputation of missing values, balancing the number of passengers boarding and alighting, unrealistic counts being removed etc. Before using APC data for modelling, it would be useful to know if the counts have been post-processed and if so, in what way.</li>
+</ul>
 
 
 </section>
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>H. N. Koutsopoulos, Z. Ma, P. Noursalehi, and Y. Zhu, ‘Chapter 10 - Transit Data Analytics for Planning, Monitoring, Control, and Information’, in Mobility Patterns, Big Data and Transport Analytics, C. Antoniou, L. Dimitriou, and F. Pereira, Eds. Elsevier, 2019, pp.&nbsp;229–261.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
